@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="logo">Expense Tracker</h1>
+  </header>
+
+  <main class="main-content">
+
+    <div class="card">
+      <h2 class="card-title">Add Expense</h2>
+
+      <label class="input-label" for="descInput">Description</label>
+      <input type="text" id="descInput" class="input-field" placeholder="e.g., Lunch" maxlength="80" />
+
+      <label class="input-label" for="amountInput">Amount ($)</label>
+      <input type="number" id="amountInput" class="input-field" placeholder="e.g., 12.50" min="0" />
+
+      <label class="input-label" for="categorySelect">Category</label>
+      <select id="categorySelect" class="input-field">
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Bills">Bills</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <button class="btn-add" id="addBtn">Add Expense</button>
+
+      <p class="warning hidden" id="warning">Please fill in both description and amount.</p>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">Total Spent</h2>
+      <p class="total-display" id="totalDisplay">$0.00</p>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">Spending by Category</h2>
+      <div id="categoryBars">
+        <p class="empty-state" id="barsEmpty">No expenses yet.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">All Expenses</h2>
+      <ul class="expense-list" id="expenseList"></ul>
+      <p class="empty-state" id="listEmpty">No expenses added yet.</p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with vanilla JS &mdash; Expense Tracker</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
