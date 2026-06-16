@@ -1,6 +1,6 @@
 # Expense Tracker
 
-A simple expense tracker built with plain HTML, CSS, and JavaScript. No frameworks, no installs. Open `index.html` and start adding expenses.
+A simple expense tracker built with plain HTML, CSS, and JavaScript. 
 
 ## What it does
 
